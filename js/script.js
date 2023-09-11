@@ -113,7 +113,7 @@ const appData = {
     }
 
     for (let key in this.servicesNumber) {
-      appData.servicePricesNumber += appData.servicesNumber[key];
+      this.servicePricesNumber += this.servicesNumber[key];
     }
 
     for (let key in this.servicesPercent) {
@@ -132,6 +132,7 @@ const appData = {
     spanRange.innerText = event.target.value;
     this.rollback = event.target.value;
   },
+  /*
   logger: function () {
     console.log(appData.fullPrice);
     console.log(appData.servicePercentPrices);
@@ -147,6 +148,7 @@ const appData = {
       return true;
     }
   },
+  */
   blockAttribute: function () {
     allSelect = document.querySelectorAll(".main-controls__select select");
     allInput = document.querySelectorAll(
